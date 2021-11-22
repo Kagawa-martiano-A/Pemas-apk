@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1088827503459",
+    "firebase_url": "https://pemas-7a17b.firebaseio.com",
+    "project_id": "pemas-7a17b",
+    "storage_bucket": "pemas-7a17b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088827503459:android:0a406812625cfc64815956",
+        "android_client_info": {
+          "package_name": "com.example.pemas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088827503459-gh5b3njh6624udqo95rub9326kk57i3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pemas",
+            "certificate_hash": "460757038e99c43d3a3f2ca8e1e9c5cba41ce151"
+          }
+        },
+        {
+          "client_id": "1088827503459-6u71a11j2qmhvk0hbo9mr8o3crasrs0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXzwBRLnKEzOj9egd5_vZWbYgTDzHmaX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088827503459-6u71a11j2qmhvk0hbo9mr8o3crasrs0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

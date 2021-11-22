@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f7f3"
+    tools:context=".Profil">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundsolid"
+        android:minHeight="?attr/actionBarSize"
+        android:textAlignment="center">
+        <ImageView
+            android:id="@+id/arrownotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_arrow"/>
+        <TextView
+            android:id="@+id/txtToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_gravity="left" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/backgroundsolid">
+        <TextView
+            android:id="@+id/profilName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/R2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bgsolid"
+            android:layout_below="@id/relative"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:id="@+id/imgphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/profilePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#6b6b6b"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/R3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgsolid"
+            android:layout_below="@id/R2">
+
+            <ImageView
+                android:id="@+id/imgemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_email" />
+
+            <TextView
+                android:id="@+id/profilEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="17dp"
+                android:textColor="#6b6b6b" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/R3"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgsolid">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgsolid"
+            android:textColor="#6b6b6b"
+            android:onClick="logout"
+            android:text="Keluar"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@drawable/bgsolid"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
